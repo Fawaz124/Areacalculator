@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+<body>
+
+    
+    <!-- <h1 id="myScreen">Hello my people</h1> -->
+    <!-- <input type="text" id="firstName" placeholder="Firstname" value="Fawaz"> -->
+
+   
+    <!-- <button onclick="sayMyName()">Click me</button>
+    <h4 id="myScreen">Display Screen</h4> -->
+
+    <h3 class="head">Area of a circle.. </h3>
+    <input class="tail" type="number" placeholder="radius" id="radius">
+    <button class="btn" onclick="calculateCircle()">Calculate</button>
+    <h4 class="output">Result: <span id="showCircleResult"></span></h4>
+
+    <h3 class="head">Area of a triangle.. </h3>
+    <input class="tail" type="number" placeholder="base" id="triangleBase">
+    <input class="tail" type="number" placeholder="height" id="triangleHeight">
+    <button class="btn" onclick="calculateTriangle()">Calculate</button>
+    <h4 class="output">Result: <span id="showTriangleResult"></span></h4>
+
+    
+    <h3 class="head">Area of a square.. </h3>
+    <input class="tail" type="number" placeholder="side" id="side1">
+    <button class="btn"  onclick="calculateSquare()">Calculate</button>
+    <h4 class="output">Result: <span id="showSquareResult"></span></h4>
+
+    <h3 class="head">Area of a quadrilateral.. </h3>
+    <input class="tail" type="number" placeholder="length" id="quadLength">
+    <input class="tail" type="number" placeholder="width" id="quadWidth"> 
+    <button class="btn" onclick="calculateQuadrilateral()">Calculate</button>
+    <h4 class="output">Result: <span id="showQuadrilateralResult"></span></h4>
+
+    <h3 class="head">Area of a rhombus.. </h3>
+    <input class="tail" type="number" placeholder="First diagonal" id="diagonal1">
+    <input class="tail" type="number" placeholder="Second diagonal" id="diagonal2">
+    <button class="btn" onclick="calculateRhombus()">Calculate</button>
+    <h4 class="output">Result: <span id="showRhombusResult"></span></h4>
+
+    <h3 class="head">Area of a trapezium.. </h3>
+    <input class="tail" type="number" placeholder="base1" id="trapBase1">
+    <input class="tail" type="number" placeholder="base2" id="trapBase2">
+    <input class="tail" type="number" placeholder="height" id="trapHeight">
+    <button class="btn" onclick="calculateTrapezium()">Calculate</button>
+    <h4 class="output">Result: <span id="showTrapeziumResult"></span></h4>
+
+    <h3 class="head">Area of a parallelogram..</h3>
+    <input class="tail" type="number" placeholder="base" id="paraBase">
+    <input class="tail" type="number" placeholder="height" id="paraHeight">
+    <button class="btn" onclick="calculateParallelogram()">Calculate</button>
+    <h4 class="output">Result: <span id="showParallelogramResult"></span></h4>
+
+    <h3 class="head">The body mass index..</h3>
+    <input class="tail" type="number" placeholder="weight" id="bmiWeight">
+    <input class="tail" type="number" placeholder="(height ** 2)" id="bmiHeight">
+    <button class="btn" onclick="calculateBodymassindex()">Calculate</button>
+    <h4 class="output">Result: <span id="showBodymassindexResult"></span></h4>
+
+
+
+
+
+
+
+
+    <script>
+        // DOM -- Document object model
+        // let screen1 = document.getElementById("myScreen")
+        // screen1.style.color = "green"
+        // screen1.innerHTML = "Something Else"
+        // screen1.innerHTML = `<span style="color:red">Hello</span>`
+        
+        // console.log(screen1);
+        // let firstname = document.getElementById("firstName").value
+        // firstname = fawaz
+        // console.log(firstname);
+
+// types of event listeners in js
+// mouse event includes events like `mouseover`, `mouseout`, `mousemove` element.addEventListener(mouseover)
+// load event
+// transition event 
+        // JS Functions
+
+        // function sayMyName(){
+        //     let firstname = document.getElementById("firstName").value
+        //     myScreen.innerHTML = "Your name is "+firstname
+
+        //     // alert(firstname)
+        // }
+         function calculateCircle(){
+            let rad = Number(radius.value)
+            const pi = 3.142
+
+            let result = pi * (rad ** 2)
+            showCircleResult.innerHTML = result
+         }
+
+        function calculateTriangle(){
+            let base = Number(triangleBase.value)
+            let height = Number(triangleHeight.value)   
+            
+
+            let result = (base * height) / 2
+            showTriangleResult.innerHTML = result
+        }
+
+        function calculateSquare(){
+            let side = Number(side1.value)
+            let result = (side ** 2)
+            showSquareResult.innerHTML = result
+        }
+
+        function calculateQuadrilateral(){
+            let length = Number(quadLength.value)
+            let width = Number(quadWidth.value)
+            let result = (length * width)
+            showQuadrilateralResult.innerHTML = result
+        }
+
+        function calculateRhombus(){
+            let Firstdiagonal = Number(diagonal1.value)
+            let Seconddiagonal = Number(diagonal2.value)
+            let result = (Firstdiagonal * Seconddiagonal) / 2
+            showRhombusResult.innerHTML = result
+        }
+
+        function calculateTrapezium(){
+            let base1 = Number(trapBase1.value)
+            let base2 = Number(trapBase2.value)
+            let height = Number(trapHeight.value)
+            let result = ((base1 + base2) * height) / 2
+            showTrapeziumResult.innerHTML = result
+        }
+
+        function calculateParallelogram(){
+            let base = Number(paraBase.value)
+            let height = Number(paraHeight.value)
+            let result = base * height
+            showParallelogramResult.innerHTML = result
+
+        }
+
+        function calculateBodymassindex(){
+            let weight = Number(bmiWeight.value)
+            let height = Number(bmiHeight.value)
+            let result = weight / (height ** 2)
+            showBodymassindexResult.innerHTML = result
+        }
+         
+
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.head{
+    text-align: left;
+    font-size: 25px;
+    padding: 20px;
+    background-color:blueviolet;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.tail{
+    margin: 20px 0;
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    font-family: monospace;
+    
+}
+.btn{
+    margin: 20px 0;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: monospace;
+
+}
+.output{
+    font-size: 1.5em;
+    font-family: monospace;
+    margin-top: 20px;
+    display: block;
+    color: blueviolet;
+}
